@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="sheet">
+        <header class="head">
+         <div>
+            <div class="eyebrow"> Tab Note </div>
+            <h1 id="pageTitle"> Loading Page...</h1>
+            <div class="host mono" id="pageHost"></div>
+         </div>
+         <div class="stamp" id="stamp" hidden> saved</div>
+
+        </header>
+        <main class="body">
+            <label class="field">
+                <span class="eyebrow"> Note </span>
+                <textarea id="body" rows="5" placeholder="Why Does this page matter to U?">
+                </textarea>
+            
+            </label>
+            <div class="row">
+                <label class="field">
+                    <span class="eyebrow"> Priority</span>
+                    <select id="priority">
+                        <option value="low">low</option>
+                        <option value="normal" selected> Normal </option>
+                        <option value="high">High</option>
+                    </select>
+                </label>
+                <label class="field">
+                    <span class="eyebrow">Remind me </span>
+                    <input type="datetime-local" id="remind">
+                </label>
+            </div>
+            <div class="chips">
+                <span class="eyebrow"> Quick</span>
+                <button type="button" class="quiet chip" data-in="60"> 1 hour</button>
+                <button type="button" class="quiet chip" data-in="1440">Tomorrow</button>
+                <button type="button" class="quiet chip" data-in="10080">Next week</button>
+                <button type="button" class="quiet chip" data-in="0"> Clear </button>
+            </div>
+        </main>
+        <footer class="foot">
+            <div class="left">
+                <button id="save" class="primary"> Save Note</button>
+                <button id="delete" class="quiet" hidden> Delete </button>
+
+            </div>
+            <a href="#" class="link mono" id="openDash">All Notes</a>
+        </footer>
+        <div class="status mono" id="status"></div>
+    </div>
+    <script src="storage.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
