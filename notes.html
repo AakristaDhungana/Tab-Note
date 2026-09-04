@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Note</title>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <div class="wrap">
+        <header class="masthead">
+            <div>
+            <div class="eyebrow">Tab Note</div>
+            <h1>Everything you write down</h1>
+            </div>
+            <div class="counts mono" id="counts"></div>
+        </header>
+        <div class="controls">
+         <input id="search" type="search" placeholder="Search notes,titles or sites" autocomplete="off">
+         <div class="filters" id="filters">
+            <button class="quiet f on" data-p="all">All</button>
+            <button class="quiet f " data-p="high">high</button>
+            <button class="quiet f " data-p="Normal">Normal</button>
+            <button class="quiet f " data-p="low">low</button>
+            <button class="quiet f " data-p="due">Reminder</button>
+         </div>
+
+         <select class="sort" id="sort">
+            <option value="updated"> Recently edited</option>
+            <option value="created"> Oldest First</option>
+            <option value="priority"> Priority </option>
+            <option value="site"> Site A-Z </option>
+         </select>
+        
+        </div>
+
+        <ul class="list" id="list"></ul>
+        <div class="empty" id="empty" hidden>
+            <p class="big" id="emptyTitle"> No Notes Yet</p>
+            <p id="emptyBody">
+                Open Any page then Click The Tab Note icon in your toolbar and write a line
+                 about why it matters , It will Show up here .
+            </p>
+
+        </div>
+        <footer class="footernote mono">
+            " Your Note oonly live in your browser Profile (chrome.storage.local) ,
+            nothing is uploaded anywhere "
+        </footer>
+    </div>
+    <script src="storage.js"></script>
+    <script src="notes.js"></script>
+</body>
+</html>
