@@ -1,0 +1,143 @@
+/* now gotta do css for varaiabel and other stuffs */
+
+:root {
+    --paper : #f7f4ee;
+    --paper-raised : #fffdf9;
+    --rule :  #e2dbcf;
+    --rule-soft : #ece6db;
+    --ink: #2c2823;
+    --ink-soft :#6b635a;
+    --ink-faint:  #9a9187;
+    --clay: #a2543a;
+    --clay-wash : #f3e3db;
+    --moss : #5d6b46;
+    --moss-wash : #e7ecdd;
+    --slate :  #4a5d6b;
+    --slate-wash:#e2e9ee;
+    --focus: #b98a5e;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing : antialiased;
+
+}
+
+.mono,
+input,
+textarea,
+select,
+button,
+.meta {
+    font-family: sans-serif;
+}
+
+.eyebrow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    font-size: 13px;
+    color: var(--ink);
+    background: var(--paper-raised);
+    border : 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 7px 8px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline : 2px solid var(--focus);
+    outline-offset: -1px
+}
+
+textarea {
+    resize: vertical;
+    line-height: 1.55;
+}
+
+button {
+    font-size: 12px;
+    cursor : pointer;
+    border-radius: 3px;
+    border: 1px solid var(--rule);
+    background: var(--paper-raised);
+    color: var(--ink);
+    padding: 7px 12px;
+}
+
+button:hover {
+    border-color: var(--ink-faint);
+
+}
+button.primary {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--paper-raised);
+}
+
+button.primary:hover {
+    background: #413a32;
+}
+
+button.quiet {
+    border-color: transparent;
+    background: transparent;
+    color: var(--ink-soft);
+    padding: 5px 7px;
+}
+
+button.quiet:hover{
+    color: var(--clay);
+    background: var(--clay-wash);
+}
+.tag{
+    display: inline-flex;
+    align-items: center;
+    gap : 5px;
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    border: 1px solid var(--rule);
+    color: var(--ink-soft);
+    background: var(--paper-raised);
+}
+
+.tag[data-p="high"] {
+    color: var(--clay);
+    border-color: #dfc0b2;
+    background: var(--clay-wash);
+}
+
+.tag[data-p="normal"]{
+    color: var(--slate);
+    border-color: #c8d6de;
+    background: var(--slate-wash);
+}
+
+.tag[data-p="low"] {
+    color: var(--moss);
+    border-color: #cbd6b8;
+    background: var(--moss);
+}
