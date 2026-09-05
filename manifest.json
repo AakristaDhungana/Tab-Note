@@ -1,24 +1,23 @@
 {
-    "manifest_version" : 3,
-    "name" : " Tab Note" ,
-    "version" : "1.0.0",
-    "description" : "keep a private note , priority and reminder for any page you visit then search theml all in one place",
-    " permissions " : ["activeTab" , "storage" , "tabs" , "alarms" , "notifications"],
-    " action " : {
-        "default_popup" : "popup.html",
-        "default_icon" : {
-            "48" : "icon.png" ,
-            "128" : "icon.png"             
-        }
-    },
-    "options_page" : "notes.html",
-    "background" : {
-        "service_worker" : "background.js"
-    },
-    "icons" : {
-        "48" : "icon.png" ,
-        "128" : "icon.png"
-
+  "manifest_version": 3,
+  "name": "Tab Note",
+  "version": "1.0.0",
+  "description": "Keep a private note, priority and reminder for any page you visit — then search them all in one place.",
+  "permissions": ["activeTab", "storage", "tabs", "alarms", "notifications"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Note",
+    "default_icon": {
+      "48": "icon.png",
+      "128": "icon.png"
     }
-
+  },
+  "options_page": "notes.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
 }
