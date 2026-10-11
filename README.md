@@ -2,6 +2,15 @@
 Tab Note is a simple Chrome extension that lets us save a short note about any web page that we visit .
 Sometimes we save a page because we think we will need it late but after a few weeks we  forget why we saved it. Tab Note helps with this problem. we can write a note, set a priority and add a reminder so we can remember why the page is important and we saved that.
 
+
+## Images 
+
+![Project Dashboard](Images/Tab-Note.png)
+
+---
+
+![Project Dashboard](Images/Tab-Note-2.png)
+
 ## Features
 
 - It saves one note for each webpage that we save
